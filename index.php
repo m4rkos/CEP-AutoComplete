@@ -11,6 +11,7 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
     
@@ -28,6 +29,7 @@
 
                         <h3 style="color: red;" id="erro"></h3>
                         
+                        <div class="conteudo" id="conteudo">
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="form-group">
@@ -37,7 +39,7 @@
                                     <small id="helpId" class="form-text text-muted">Caso não seja encontrado via busca do cep.</small>
                                 </div>
                             </div>
-                            <div class="col-md-10">
+                            <div class="col-md-5">
                                 <div class="form-group">
                                     <label for="city">Cidade (localidade)</label>
                                     <input type="text"
@@ -45,26 +47,36 @@
                                     <small id="helpId" class="form-text text-muted">Caso não seja encontrado via busca do cep.</small>
                                 </div>
                             </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label for="neighborhood">Bairro</label>
+                                    <input type="text"
+                                    class="form-control" name="neighborhood" id="neighborhood" aria-describedby="helpId" placeholder="">
+                                    <small id="helpId" class="form-text text-muted">Caso não seja encontrado via busca do cep.</small>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                          <label for="neighborhood">Bairro</label>
-                          <input type="text"
-                            class="form-control" name="neighborhood" id="neighborhood" aria-describedby="helpId" placeholder="">
-                          <small id="helpId" class="form-text text-muted">Caso não seja encontrado via busca do cep.</small>
+                        
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="street">Rua</label>
+                                    <input type="text"
+                                        class="form-control" name="street" id="street" aria-describedby="helpId" placeholder="">
+                                    <small id="helpId" class="form-text text-muted">Caso não seja encontrado via busca do cep.</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="number">Numero / complemento <b class="red">*</b></label>
+                                    <input type="text"
+                                        class="form-control" name="number" id="number" aria-describedby="helpId" placeholder="">
+                                    <small id="helpId" class="form-text text-muted">Digite o numero da casa ou apartamento.</small>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                          <label for="street">Rua</label>
-                          <input type="text"
-                            class="form-control" name="street" id="street" aria-describedby="helpId" placeholder="">
-                          <small id="helpId" class="form-text text-muted">Caso não seja encontrado via busca do cep.</small>
                         </div>
-                        <div class="form-group">
-                          <label for="number">Numero</label>
-                          <input type="text"
-                            class="form-control" name="number" id="number" aria-describedby="helpId" placeholder="">
-                          <small id="helpId" class="form-text text-muted">Digite o numero da casa ou apartamento.</small>
-                        </div>
-
+                            
                         <input type="submit" class="btn btn-secondary btn-lg" name="ok" value="enviar >">
                     </form>
                 </div>
